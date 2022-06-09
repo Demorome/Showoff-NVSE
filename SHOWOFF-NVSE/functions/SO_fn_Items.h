@@ -94,7 +94,7 @@ bool Cmd_GetEquippedItemsAsBitMask_Execute(COMMAND_ARGS)
 	return Cmd_GetEquippedItemsAsBitMask_Eval(thisObj, 0, 0, result);
 }
 
-DEFINE_COMMAND_PLUGIN(UnequipItems, "", true, kParams_FourOptionalInts);
+DEFINE_CMD_ALT_PLUGIN(UnequipItems, TakeThatShitOff, "", true, kParams_FourOptionalInts);
 //todo: Could use a lot more testing
 bool Cmd_UnequipItems_Execute(COMMAND_ARGS)
 {
@@ -115,7 +115,7 @@ bool Cmd_UnequipItems_Execute(COMMAND_ARGS)
 	return true;
 }
 
-DEFINE_COMMAND_PLUGIN(GetEquippedItems, "", true, kParams_OneOptionalInt);
+DEFINE_CMD_ALT_PLUGIN(GetEquippedItems, TheFuckShitAreYouWearing, "", true, kParams_OneOptionalInt);
 bool Cmd_GetEquippedItems_Execute(COMMAND_ARGS)
 {
 	UInt32 flags = 0;
@@ -133,7 +133,7 @@ bool Cmd_GetEquippedItems_Execute(COMMAND_ARGS)
 	return true;
 }
 
-DEFINE_COMMAND_PLUGIN(GetEquippedItemRefs, "", true, kParams_OneOptionalInt);
+DEFINE_CMD_ALT_PLUGIN(GetEquippedItemRefs, TheFuckShitAreYouWearingRefs, "", true, kParams_OneOptionalInt);
 bool Cmd_GetEquippedItemRefs_Execute(COMMAND_ARGS)
 {
 	UInt32 flags = 0;
@@ -152,7 +152,7 @@ bool Cmd_GetEquippedItemRefs_Execute(COMMAND_ARGS)
 	return true;
 }
 
-DEFINE_COMMAND_PLUGIN(RemoveAllItemsShowOff, "", true, kParams_TwoOptionalInts_OneOptionalContainerRef_OneOptionalList);
+DEFINE_CMD_ALT_PLUGIN(RemoveAllItemsShowOff, YouDontNeedAllThisShit, "", true, kParams_TwoOptionalInts_OneOptionalContainerRef_OneOptionalList);
 
 
 
